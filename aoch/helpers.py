@@ -8,3 +8,10 @@ def transpose(matrix: list[list[int]]) -> list[list[int]]:
 		for c in range(column):
 			result[c][r] = matrix[r][c]
 	return result
+
+def adjacent(pos):
+    for axis in range(len(pos)):
+        for d in (-1, 1):
+            q = list(pos)
+            q[axis] += d
+            yield tuple(q)
