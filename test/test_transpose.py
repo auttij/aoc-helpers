@@ -1,4 +1,3 @@
-import pytest
 from aoch.helpers import transpose
 
 def test_basic():
